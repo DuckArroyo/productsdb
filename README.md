@@ -4,14 +4,22 @@
 
 ## Developer Notes
 
-DB model in it's own .md - DB_Model.md
-
-# To do
-
 - initiate db
 - seed db
 - review indexes
 - review routes
+
+#### To do next
+
+Create the code for the models
+
+- Category
+- Product
+- ProductTag
+- Tag
+- relationships in index
+
+DB model in it's own .md - DB_Model.md
 
 ### Installations
 
