@@ -4,10 +4,24 @@
 
 ## Developer Notes
 
-- initiate db
+- initiate server
+  npm run watch or node server
+
+- Models
+define them first.
+Then go over relationships
+
 - seed db
+  npm run seed
+
 - review indexes
+
 - review routes
+
+- Test routes with insomnia
+  -Create
+  -Update
+  -Delete
 
 #### To do next
 
