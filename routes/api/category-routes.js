@@ -57,21 +57,39 @@ router.get("/:id", (req, res) => {
 router.post("/", (req, res) => {
   console.log("======================");
   console.log("Category POST");
+  Category.create({
+    id: req.body.id,
+    category_name: req.body.category_name,
+  })
+    .then((dbCategoryData) => res.json(dbCategoryData))
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
+//!Am I missing other data to include in the update? There are no other fields in the model, associated items in the other models?
+//!Looked at the index and Category is only associcated with Product
 router.put("/:id", (req, res) => {
   console.log("======================");
   console.log("Category UPDATED");
-  // Category.update(req.body, {
-  //   where: {
-  //     id: req.params.id,
-  //   },
+  Category.update(req.body, {
+    where: {
+      id: req.params.id,
+    },
+    category_name: req.body.category_name,
+  })
+    .then((NewCategoryData) => res.json(NewCategoryData))
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 router.delete("/:id", (req, res) => {
   console.log("======================");
   console.log("Category DELETED");
-  Product.destroy({
+  Category.destroy({
     where: {
       id: req.params.id,
     },

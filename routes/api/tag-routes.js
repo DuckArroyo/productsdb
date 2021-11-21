@@ -54,6 +54,7 @@ router.get("/:id", (req, res) => {
     });
 });
 
+//!In this route I believe I need to get the body.tagIds.length do I also need to map it?
 router.post("/", (req, res) => {
   console.log("======================");
   console.log("Tag Post");
@@ -115,7 +116,7 @@ router.put("/:id", (req, res) => {
 router.delete("/:id", (req, res) => {
   console.log("======================");
   console.log("Tag DELETED");
-  Product.destroy({
+  Tag.destroy({
     where: {
       id: req.params.id,
     },
