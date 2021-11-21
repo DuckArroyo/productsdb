@@ -9,21 +9,19 @@ router.get("/", (req, res) => {
   // find all products
   console.log("======================");
   console.log("All Products");
-  Product.findAll()
-
-    //   {
-    //   attributes: ["id", "product_name", "price", "stock", "category_id", sequelize.include("(SELECT COUNT(*) ")],
-    //   include: [
-    //     {
-    //       model: Category,
-    //       attributes: ["id", "category_name"],
-    //     },
-    //     {
-    //       model: Tag,
-    //       attributes: ["id", "tag_name"],
-    //     },
-    //   ],
-    // }
+  Product.findAll({
+    attributes: ["id", "product_name", "price", "stock", "category_id"],
+    include: [
+      {
+        model: Category,
+        attributes: ["id", "category_name"],
+      },
+      {
+        model: Tag,
+        attributes: ["id", "tag_name"],
+      },
+    ],
+  })
     .then((dbProductData) => res.json(dbProductData))
     .catch((err) => {
       console.log(err);
@@ -41,6 +39,7 @@ router.get("/:id", (req, res) => {
     where: {
       id: req.params.id,
     },
+    attributes: ["id", "product_name", "price", "stock", "category_id"],
     // be sure to include its associated Category and Tag data
     include: [
       {
@@ -53,7 +52,6 @@ router.get("/:id", (req, res) => {
       },
     ],
   })
-
     .then((dbProductData) => {
       console.log(dbProductData);
       if (!dbProductData) {
@@ -70,14 +68,8 @@ router.get("/:id", (req, res) => {
 
 // create new product
 router.post("/", (req, res) => {
-  /* req.body should look like this...
-    {
-      product_name: "Basketball",
-      price: 200.00,
-      stock: 3,
-      tagIds: [1, 2, 3, 4]
-    }
-  */
+  console.log("======================");
+  console.log("Product Post Route ");
   Product.create({
     product_name: req.body.product_name,
     price: req.body.price,
@@ -107,6 +99,8 @@ router.post("/", (req, res) => {
 
 // update product
 router.put("/:id", (req, res) => {
+  console.log("======================");
+  console.log("Product UPDATED");
   // update product data
   Product.update(req.body, {
     where: {
@@ -152,6 +146,8 @@ router.put("/:id", (req, res) => {
 });
 
 router.delete("/:id", (req, res) => {
+  console.log("======================");
+  console.log("Product DELETED");
   Product.destroy({
     where: {
       id: req.params.id,

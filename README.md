@@ -14,9 +14,11 @@
   npm run seed
 
 - review indexes
-
+  DONE
 - review routes
-
+  Products - DONE
+  Tags - DONE
+  Category - Pending ==========================
 - Test routes with insomnia
   -Create
   -Update
