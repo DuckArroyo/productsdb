@@ -8,8 +8,7 @@
   npm run watch or node server
 
 - Models
-define them first.
-Then go over relationships
+  DONE
 
 - seed db
   npm run seed
