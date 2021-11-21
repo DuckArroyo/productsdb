@@ -56,7 +56,7 @@ router.get("/:id", (req, res) => {
 
 router.post("/", (req, res) => {
   console.log("======================");
-  console.log("Product Post Route ");
+  console.log("Tag Post");
   Tag.create({
     id: req.params.id,
     tag_name: req.body.tag_name,

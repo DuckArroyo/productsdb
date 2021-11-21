@@ -1,6 +1,5 @@
 const router = require("express").Router();
 const { Product, Category, Tag, ProductTag } = require("../../models");
-const { sequelize } = require("../../models/Product");
 
 // The `/api/products` endpoint
 
@@ -69,7 +68,7 @@ router.get("/:id", (req, res) => {
 // create new product
 router.post("/", (req, res) => {
   console.log("======================");
-  console.log("Product Post Route ");
+  console.log("Product Post");
   Product.create({
     product_name: req.body.product_name,
     price: req.body.price,

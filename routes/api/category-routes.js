@@ -31,7 +31,7 @@ router.get("/:id", (req, res) => {
     where: {
       id: req.params.id,
     },
-    attributes: ["id", "category_id"],
+    attributes: ["id", "category_name"],
     include: [
       {
         model: Product,
@@ -56,7 +56,7 @@ router.get("/:id", (req, res) => {
 
 router.post("/", (req, res) => {
   console.log("======================");
-  console.log("Category Post Route ");
+  console.log("Category POST");
 });
 
 router.put("/:id", (req, res) => {
@@ -70,7 +70,7 @@ router.put("/:id", (req, res) => {
 
 router.delete("/:id", (req, res) => {
   console.log("======================");
-  console.log("Product DELETED");
+  console.log("Category DELETED");
   Product.destroy({
     where: {
       id: req.params.id,
