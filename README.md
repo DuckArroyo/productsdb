@@ -1,6 +1,51 @@
-# Challenge13
+# Challenge13 ![GitHublicense](https://img.shields.io/npm/l/express?style=for-the-badge)
 
-## E-commerce back end
+## UO Coding bootcamp Challenge E-commerce back end
+
+## Links
+
+Github Pages [Link]()
+
+Github Repository [Link](https://github.com/DuckArroyo/challenge13)
+
+## Description
+
+Create a backend database with sql to manage an e-commerce website.
+
+## Required installations for code duplication
+
+
+## The commandments
+
+"scripts": {
+"watch": "nodemon server.js",
+"test": "jest",
+"start": "node server.js",
+"seed": "node seeds/index.js"
+},
+
+# Contributions by:
+
+DeveloperDuckArroyo
+
+[Portfolio](https://duckarroyo.github.io/challenge2/)
+
+[GitHub](https://github.com/DuckArroyo)
+
+[Twitter @DevDuckArroyo](https://twitter.com/DevDuckArroyo)
+
+[LinkeIn](https://www.linkedin.com/in/duckarroyo/)
+
+[CodePen](https://codepen.io/DeveloperDuckArroyo)
+
+[Email](mailto:DeveloperDuckArroyo@gmail.com)
+
+# Screnshots
+
+<img src="./.png" style="width: 400px">
+
+
+
 
 ## Developer Notes
 
