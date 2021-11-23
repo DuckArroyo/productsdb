@@ -57,10 +57,14 @@ router.get("/:id", (req, res) => {
 router.post("/", (req, res) => {
   console.log("======================");
   console.log("Category POST");
-  Category.create({
-    id: req.body.id,
-    category_name: req.body.category_name,
-  })
+  console.log(req.body);
+
+  Category.create(
+    req.body
+    //!re.body contains both of these parameters
+    // id: req.body.id,
+    // category_name: req.body.category_name,
+  )
     .then((dbCategoryData) => res.json(dbCategoryData))
     .catch((err) => {
       console.log(err);
@@ -68,8 +72,6 @@ router.post("/", (req, res) => {
     });
 });
 
-//!Am I missing other data to include in the update? There are no other fields in the model, associated items in the other models?
-//!Looked at the index and Category is only associcated with Product
 router.put("/:id", (req, res) => {
   console.log("======================");
   console.log("Category UPDATED");
@@ -77,9 +79,14 @@ router.put("/:id", (req, res) => {
     where: {
       id: req.params.id,
     },
-    category_name: req.body.category_name,
+    // category_name: req.body.category_name,
   })
-    .then((NewCategoryData) => res.json(NewCategoryData))
+
+    .then((NewCategoryData) => {
+      console.log(NewCategoryData);
+      if (NewCategoryData[0] === 0) return res.status(404).json({ message: "Category not found with this id!" });
+      res.json(NewCategoryData);
+    })
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
@@ -95,6 +102,7 @@ router.delete("/:id", (req, res) => {
     },
   })
     .then((deleteCategory) => {
+      console.log(deleteCategory);
       if (!deleteCategory) {
         res.status(404).json({ message: "Category not found with this id!" });
         return;
