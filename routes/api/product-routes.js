@@ -137,7 +137,10 @@ router.put("/:id", (req, res) => {
         ProductTag.bulkCreate(newProductTags),
       ]);
     })
-    .then((updatedProductTags) => res.json(updatedProductTags))
+    .then((updatedProductTags) => {
+      if (updatedProductTags[0] === 0) return res.status(404).json({ message: "Product not found with this id!" });
+      res.json(updatedProductTags)
+    })
     .catch((err) => {
       // console.log(err);
       res.status(400).json(err);

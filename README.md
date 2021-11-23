@@ -1,13 +1,15 @@
 # Challenge13 ![GitHublicense](https://img.shields.io/npm/l/express?style=for-the-badge)
 
-
 ## Links
 
-Github Pages [Link]()
+Video Walkthrough [Link](https://watch.screencastify.com/v/TEiLfX9AFozhKDb4ec7G)
 
 Github Repository [Link](https://github.com/DuckArroyo/challenge13)
 
 ## Description
+
+This is a bankend project where I had to build models and routes for an e-commerce site.
+The routes and models work correctly.
 
 ## Required installations for code duplication
 
@@ -48,7 +50,9 @@ DeveloperDuckArroyo
 
 # Screnshots
 
-<img src="./.png" style="width: 400px">
+<img src="./assets/post.png" style="width: 400px">
+
+<img src="./assets/put.png" style="width: 400px">
 
 ## Developer Notes
 
