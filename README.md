@@ -1,12 +1,11 @@
 # Challenge13 ![GitHublicense](https://img.shields.io/npm/l/express?style=for-the-badge)
 
-## E-commerce back end
 
 ## Links
 
 Github Pages [Link]()
 
-Github Repository [Link]()
+Github Repository [Link](https://github.com/DuckArroyo/challenge13)
 
 ## Description
 
