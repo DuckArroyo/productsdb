@@ -6,11 +6,11 @@
 
 [Video Walkthrough](https://watch.screencastify.com/v/TEiLfX9AFozhKDb4ec7G)
 
-[Github Repository](https://github.com/DuckArroyo/challenge13)
+[Github Repository](https://github.com/DuckArroyo/productsdb)
 
 ## Description
 
-This is a bankend project where I had to build models and routes for an e-commerce site.
+This is a backend project where I had to build models and routes for an e-commerce site.
 The routes and models work correctly.
 
 ## Required installations for code duplication
