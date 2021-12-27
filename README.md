@@ -1,10 +1,12 @@
-# Challenge13 ![GitHublicense](https://img.shields.io/npm/l/express?style=for-the-badge)
+# Challenge13 
+
+![GitHublicense](https://img.shields.io/npm/l/express?style=for-the-badge)
 
 ## Links
 
-Video Walkthrough [Link](https://watch.screencastify.com/v/TEiLfX9AFozhKDb4ec7G)
+[Video Walkthrough](https://watch.screencastify.com/v/TEiLfX9AFozhKDb4ec7G)
 
-Github Repository [Link](https://github.com/DuckArroyo/challenge13)
+[Github Repository](https://github.com/DuckArroyo/challenge13)
 
 ## Description
 
@@ -36,17 +38,19 @@ The routes and models work correctly.
 
 DeveloperDuckArroyo
 
-[Portfolio](https://duckarroyo.github.io/challenge2/)
+[Email](mailto:DeveloperDuckArroyo@gmail.com)
+
+[Portfolio](https://github.com/DuckArroyo/portfolio)
+
+[React Portfolio](http://DuckArroyo.github.io/reactPortfolio)
 
 [GitHub](https://github.com/DuckArroyo)
 
 [Twitter @DevDuckArroyo](https://twitter.com/DevDuckArroyo)
 
-[LinkeIn](https://www.linkedin.com/in/duckarroyo/)
+[LinkeIn](https://www.linkedin.com/in/duckarroyo)
 
 [CodePen](https://codepen.io/DeveloperDuckArroyo)
-
-[Email](mailto:DeveloperDuckArroyo@gmail.com)
 
 # Screnshots
 
