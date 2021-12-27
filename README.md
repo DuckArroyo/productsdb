@@ -1,4 +1,4 @@
-# Challenge13 
+# Products database 
 
 ![GitHublicense](https://img.shields.io/npm/l/express?style=for-the-badge)
 
@@ -48,7 +48,7 @@ DeveloperDuckArroyo
 
 [Twitter @DevDuckArroyo](https://twitter.com/DevDuckArroyo)
 
-[LinkeIn](https://www.linkedin.com/in/duckarroyo)
+[LinkedIn](https://www.linkedin.com/in/duckarroyo)
 
 [CodePen](https://codepen.io/DeveloperDuckArroyo)
 
